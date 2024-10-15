@@ -1,0 +1,41 @@
+{
+  "name": "cmv-app",
+  "version": "2.0.0-beta.3",
+  "author": "cmv.io - https://github.com/cmv/",
+  "license": "MIT",
+  "year": "2021",
+  "homepage": "https://cmv.io/",
+  "repository": "https://github.com/cmv/cmv-app/",
+  "devDependencies": {
+    "body-parser": "~1.19.0",
+    "eslint": "~7.32.0",
+    "grunt": "~1.4.0",
+    "grunt-browser-sync": "~2.2.0",
+    "grunt-contrib-clean": "~2.0.0",
+    "grunt-contrib-compress": "~1.6.0",
+    "grunt-contrib-copy": "1.0.x",
+    "grunt-contrib-cssmin": "~4.0.0",
+    "grunt-contrib-uglify": "~5.0.0",
+    "grunt-contrib-watch": "~1.1.0",
+    "grunt-eslint": "~23.0.0",
+    "grunt-postcss": "~0.9.0",
+    "grunt-stylelint": "~0.16.0",
+    "proxypage": "*",
+    "snyk": "^1.462.0",
+    "stylelint": "~13.13.1",
+    "stylelint-config-standard": "~20.0.0"
+  },
+  "engine": "node >= 10",
+  "dojoBuild": "package.js",
+  "scripts": {
+    "start": "grunt default",
+    "build": "grunt build",
+    "build-view": "grunt build-view",
+    "lint": "grunt lint",
+    "scripts": "grunt scripts",
+    "stylesheets": "grunt stylesheets",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
+}
